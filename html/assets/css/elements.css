@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body{
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: var(--bg-color);
+  
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+}
+h1{
+  font-size: 6rem;  
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 6rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.2;
+}
+h3{
+  font-size: 5rem;  
+}
+h4{
+  font-size: 4.5rem;  
+}
+h5{
+  font-size: 4rem;
+}
+h6{
+  font-size: 3.5rem;
+}
+a{
+  text-decoration: none;
+  color: var(--bg-color);
+}
+a:visited{
+  color: inherit;
+}
+p{
+  margin-bottom: 3rem;
+}
+.responsive-table{
+  overflow: hidden;
+  overflow-x: auto;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+table td, table th{
+  white-space: nowrap;
+  padding: 1rem;
+  text-align: center;
+  border: 0.1rem solid var(--bg-color);
+}
+caption{
+  text-align: left;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+tfoot td{
+  font-size: 1.5rem;
+  background: var(--light-grey);
+  text-align: right;
+}
+thead th{
+  background: var(--light-grey);
+  border: 1px solid var(--bg-color);
+}
