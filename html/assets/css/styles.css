@@ -13,7 +13,7 @@
 }
 .intro-img{
   max-width: 100%;
-  height: auto;
+  max-height: auto;
 }
 .top3-content{
   max-width: 64rem;
@@ -31,7 +31,7 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .grid-main-heading{
@@ -67,7 +67,7 @@
   transform:rotate(20deg) ;
 }
 .gallery-img{
-  width: 100%;
+  width: 100vh;
   max-width: 33rem;
   max-height: 33rem;
   overflow: hidden;
@@ -135,4 +135,93 @@
 .footer p{
   margin: 0;
   padding: -3rem;
+}
+.close-menu{
+  display:none;
+}
+.back-to-top{
+  position: fixed;
+  bottom: 0rem;
+  right: 1rem;
+  color: rgb(88, 88, 88);
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 3.5rem;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  cursor: pointer;
+  border: 0.1rem solid var(--border-color);
+  border-radius: 50%;
+  transform:rotate(-90deg) ;
+}
+  a .back-to-top {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+  .back-to-top a:visited{
+  color: var(--primary-color);
+  text-decoration: none;
+}
+@media (max-width: 80rem){
+  .intro-content, .grid{
+    grid-template-columns: 1fr;
+  }
+  .gallery-img{
+    width: 100%;
+  }
+  .gallery-img img{
+    width: 100%;
+  }
+  .grid-one-content{
+    display: block;
+  }
+  .menu{
+    bottom: 0;
+    text-align: center;
+  }
+  .menu-content, .menu-content ul{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu-content{
+    height: 100vh;
+  }
+  .menu{
+    display: none;
+  }
+  .close-menu-label::after{
+    content: '☰';
+    position:fixed;
+    z-index: 2;
+    top: 1rem;
+    right: 2rem;
+    color: rgb(88, 88, 88);
+    font-size: 4rem;
+    line-height: 4rem;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+  } 
+  .close-menu:checked~.menu{
+    display: block;
+  }
+  .close-menu:checked~.close-menu-label::after{
+    display: block;
+    content: '✘';
+  }
+  .menu-spacing{
+    display: none;
+  }
+  .grid-main-heading{
+    margin-top:1rem;
+  }
+  .grid-one-content{
+    display: block flex;
+  }
 }

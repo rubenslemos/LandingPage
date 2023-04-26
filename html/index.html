@@ -13,14 +13,16 @@
     rel="stylesheet">
   <title>Landing Page</title>
 </head>
-<body class="white-bg">
+<body>
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close Menu" role="button">
+  <label for="close-menu" title="close-menu" class="close-menu-label"></label>
   <aside class="menu white-bg">
     <div class="main-content menu-content">
-      <h1>
+      <h1 onclick="document.getElementById('close-menu').checked = false;">
         <a href="#intro">Logo</a>
       </h1>
       <nav>
-        <ul>
+        <ul onclick="document.getElementById('close-menu').checked = false;">
           <li><a href="#top3">Top 3</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#gallery">Gallery</a></li>
@@ -32,7 +34,7 @@
     </div>
   </aside>
   <div class="menu-spacing"></div>
-  <section id="intro" class="intro section main-bg">
+  <section id="intro" class="section main-bg">
     <div class="main-content intro-content"> 
       <div class="intro-text-content">
         <h2>
@@ -198,16 +200,16 @@
     </div>
     </div>
   </section>
-  <section id="contact" class="intro section main-bg">
+  <section id="contact" class=" section main-bg">
     <div class="menu-spacing"></div>
     <div class="main-content intro-content"> 
-      <div class="intro-text-content">
+      <div class="intro-text-content img-div">
         <h2>
           Do you have Questions? Contact us
         </h2>
         <p>Are you interested in our work and our prices? Look for us, tell us about your project and how we can help you. We are interested in sending you a proposal to develop it and thereby leverage your dream. </p>
       </div>
-      <div class="intro-img">
+      <div>
         <img src="../html/assets/img/contact.svg" alt="imagem exemplo">
       </div>      
       <div class="contact-form">
@@ -247,5 +249,6 @@
   <footer id="footer" class="footer white-bg">
     <p><a rel="nofollow" target="_blank" href="#">Desenvolvido por Rubens</a></p>
   </footer>
+  <a class="back-to-top" href="#intro">➜</a>
 </body>
 </html>

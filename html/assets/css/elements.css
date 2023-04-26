@@ -45,9 +45,6 @@ a{
   text-decoration: none;
   color: var(--bg-color);
 }
-a:visited{
-  color: inherit;
-}
 p{
   margin-bottom: 3rem;
 }
