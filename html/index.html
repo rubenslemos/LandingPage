@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/variables.css">
   <link rel="stylesheet" href="assets/css/classes.css">
@@ -27,7 +26,7 @@
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#jobs">Jobs</a></li>
           <li><a href="#precos">Preços</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -83,14 +82,14 @@
       </div>
     </div>
   </section>
-  <div class="main-content grid-one-content">
-    <section id="gallery" class="grid-one section white-bg">
-      <h2 class="grid-main-heading">
-        Gallery
-      </h2>
-      <p class="grid-description">
-        Here are some recent work
-      </p>
+  <section id="gallery" class="grid-one-content section white-bg">
+    <div class="main-content">
+        <h2 class="grid-main-heading">
+          Gallery
+        </h2>
+        <p class="grid-description">
+          Here are some recent work
+        </p>
       <div class="grid">
         <div class="gallery-img">
           <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image from Unsplash.com">
@@ -111,13 +110,12 @@
           <img src="http://source.unsplash.com/random/360x360?r=6" alt="random image from Unsplash.com">
         </div>
       </div>
+    </div>
     </section>
-  </div>
-  <section id="jobs" class="grid-one section main-bg">
+    <section id="jobs" class="grid-one section main-bg">
     <div class="main-content grid-one-content">
       <h2 class="grid-main-heading">Top 3 jobs</h2>
       <p class="grid-description">Here are some recent work</p>
-
       <div class="grid">
         <article>
           <h3>First</h3>
@@ -200,5 +198,54 @@
     </div>
     </div>
   </section>
+  <section id="contact" class="intro section main-bg">
+    <div class="menu-spacing"></div>
+    <div class="main-content intro-content"> 
+      <div class="intro-text-content">
+        <h2>
+          Do you have Questions? Contact us
+        </h2>
+        <p>Are you interested in our work and our prices? Look for us, tell us about your project and how we can help you. We are interested in sending you a proposal to develop it and thereby leverage your dream. </p>
+      </div>
+      <div class="intro-img">
+        <img src="../html/assets/img/contact.svg" alt="imagem exemplo">
+      </div>      
+      <div class="contact-form">
+        <fieldset class="form-grid">
+          <legend>Contact Us</legend>
+          <form action="#" method="get" target="_blank" autocomplete="off" class="form-grid">
+            <div class="form-group">
+              <label>Primeiro Nome:
+              </label>
+              <input type="text" name="first-name" id="first-name" placeholder="Primeiro Nome">
+            </div>
+            <div class="form-group">
+              <label>Sobrenome:
+              </label>        
+              <input type="text" name="last-name" id="last-name" placeholder="Sobrenome">
+            </div>
+            <div class="form-group">
+              <label>Email:
+              </label>
+              <input type="email" name="email" id="email" placeholder="E-mail">
+            </div>
+            <div class="form-group full-width">
+              <label for="textarea">Are you interested?</label>
+              <textarea name="textarea" id="textarea" rows="5" cols="40">Tell us about your project and how we can help you.</textarea>
+            </div>
+            <div class="form-group full-width">
+              <span>
+                <button type="reset">Limpar</button>
+                <button type="submit">OK</button>
+              </span>
+            </div>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="footer white-bg">
+    <p><a rel="nofollow" target="_blank" href="#">Desenvolvido por Rubens</a></p>
+  </footer>
 </body>
 </html>
