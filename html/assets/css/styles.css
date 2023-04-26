@@ -24,6 +24,9 @@
   min-height: 100vh;
   text-align: center;
 }
+.title{
+  margin-top: -11rem;
+}
 .grid-one-content{
   display: flex;
   flex-flow: column wrap;
@@ -31,6 +34,7 @@
   height: 100vh;
 }
 .grid-main-heading{
+padding-top: 6rem;  
 margin-bottom: 1rem;
 }
 .grid-description{
